@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
- 
-   
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="style.css">
   <style>
     *{
@@ -62,7 +62,8 @@
  }
  .about_img{
      min-width: 100px;
-     max-height: 400px ;
+     max-height: 500px ;
+     overflow: auto;
 
  }
  
@@ -102,7 +103,7 @@
  /* navbar start  */
  /* sai bakers block  */
  .navbar-brand{
-     font-family: 'Baloo Bhaina 2', cursive;
+   
      font-size: 30px;
      
     }
@@ -223,7 +224,53 @@ span{
     margin: 14px;
     padding: 122px;
 }
+
+ .card-body .card-title:hover{
+    color: red
+    ;
+}
+h2{
+    font-size: 200px;
+    position: relative;
+    top: -120px;
+    /* font-family: 'Grenze Gotisch', cursive; */
+    font-family: 'Grenze Gotisch', cursive;
+font-family: 'Lobster', cursive;
+}
+
+h2:hover{
+    color: blanchedalmond;
+    
+    /* overflow: auto; */
+}
+
+h5:hover{
+    color: blanchedalmond;
+}
+ 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+ .btn{
+     display: inline;
+ }
   </style>
+  
+ 
+   
+  
   
   
 </head>
@@ -239,7 +286,7 @@ span{
           <a class="navbar-brand " href="#">
             <img src="https://static.thenounproject.com/png/1883757-200.png" width="30" height="30"
               class="d-inline-block align-top " alt="Bakery" loading="lazy">
-              𝓢𝓐𝓘  <span> 𝓑𝓐𝓚𝓔𝓡'𝓢  </span>  
+                𝓢𝓐𝓘  <span>  𝓑𝓐𝓚𝓔𝓡'𝓢  <span>   </span>  
           </a>
           <!-- LOGO and text END -->
         </nav>
@@ -256,18 +303,18 @@ span{
               <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT </a>
+              <a class="nav-link" href="#completeabout">ABOUT </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MENU CARD </a>
+              <a class="nav-link" href="#scrollmenucard">MENU CARD </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">LOCATION  </a>
+              <a class="nav-link" href="#scrolllocation">LOCATION  </a>
             </li>
              
             
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US </a>
+              <a class="nav-link" href="#scrollcontact">CONTACT US </a>
             </li>
 
             
@@ -295,7 +342,9 @@ span{
           src="  https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&dpr=100&w=500"
           class="d-block  w-100 about-img" alt="...">
         <div class="carousel-caption  d-md-block">
-          <h5>CAKES ARE HEALTHY TOO, YOU JST EAT A SMALL SLICE. </h5>
+          <h2 class="display-1 ">SAI <br> BAKER'S </h2>
+          <button type="button" class="btn btn-danger  btn-lg ">Order Now</button>
+          <h5>   CAKES ARE HEALTHY TOO, YOU JST EAT A SMALL SLICE.     </h5>
           <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
         </div>
       </div>
@@ -306,7 +355,9 @@ span{
           class="d-block w-100 about-img" alt="...">
           
         <div class="carousel-caption  d-md-block">
-          <h5>ALL HAPPINESS DEPENS ON A LEISURELY BREAKFAST</h5>
+          <h2  class="display-1  ">SAI <br> BAKER'S </h2>
+          <button type="button" class="btn btn-danger  btn-lg ">Order Now</button>
+          <h5 > ALL HAPPINESS DEPENS ON A LEISURELY BREAKFAST   </h5>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
         </div>
       </div>
@@ -315,7 +366,14 @@ span{
           src=" https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=100&w=500"
           class="d-block w-100 about-img" alt="...">
         <div class="carousel-caption  d-md-block">
-          <h5>PEOPLE WHO LOVE TO EAT ALWAYS THE BEST PEOPLE </h5>
+        <div  >
+          <h2 class="display-1  " >SAI <br> BAKER'S </h2>
+          <button type="button" class="btn btn-danger  btn-lg ">Order Now</button>
+          
+        </div> 
+          <h5>   PEOPLE WHO LOVE TO EAT ALWAYS THE BEST PEOPLE
+
+           </h5>
           <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
         </div>
       </div>
@@ -334,9 +392,9 @@ span{
   <!-- HOME IMAGES END -->
 
   <!-- ABOUT SECTION start -->
-  <section class="main_heading my-5 ">
+  <section  class="main_heading my-5 "  >
     <div class="text-center">
-      <h1 class="display-3  my-3">About Us</h1>
+      <h1 class="display-3  my-3" id="completeabout">About <span>Us </span>  </h1>
       <hr class="w-25 mx-auto ">
     </div>
     <div class="aboutfirst col-lg-12 col-md-12 col-12">
@@ -372,7 +430,7 @@ span{
           </figure>
         </div>
         <div class="col-lg-6 col-md-6 col-12">
-          <h1> SPECIAL CHOWMEIN</h1>
+          <h1> SPECIAL <span>CHOWMEIN  </span>  </h1>
           <h6> Veg Chowmein has been one of the mostkids favoritedishes in the Indian streetmarket; however, the name
             chowmein is more of an Americanized name for Chinese stir-fry noodles. While preparing the weekly menu for
             breakfast, I included Veg Chowmein for this week to give a different taste for one of the days, asit is
@@ -395,7 +453,7 @@ span{
           </figure>
         </div>
         <div class="col-lg-6 col-md-6 col-12">
-          <h1> WORLD FAMOUS MOMOS</h1>
+          <h1> WORLD FAMOUS <span>  MOMOS </span>  </h1>
           <h6> A momo is made from thin flour pastry with a filling inside. It's essentially a little dumpling. Momos
             are found in Nepal and Tibet. There are many other variations around the world though from India and China
             all the way to Europe.Today, there are food entrepreneurs who prepare momos in bulk and supply them to
@@ -416,10 +474,10 @@ span{
   <!-- ABOUT SECTION END -->
 
   <!-- MENU CARD START  -->
-  <section>
-    <div class="col-lg-12 col-md-12 col-12">
+  <section id="scrollmenucard">
+    <div class="col-lg-12 col-md-12  col-12">
       <div class="container">
-        <h1 class="text-center display-3 ">Menu Card </h1>
+        <h1 class="text-center display-3" id="scrollmenucard"> <span> Menu </span> Card </h1>
         <hr class="w-20px">
         <div class="row">
           <div class="cards">
@@ -428,7 +486,7 @@ span{
                 <img src="https://livedemo00.template-help.com/wt_58701/images/page01_img-05.jpg" class="card-img-top"
                   alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Crispy and Creamy Doughnuts</h5>
+                  <h5 class="card-title">Crispy and Creamy Doughnuts ₹-59 </h5>
                   <p class="card-text">
                     Crispy and Creamy Doughnuts
                     We have tried so many versions of glazed American-style doughnuts, and this one finally came out
@@ -441,7 +499,7 @@ span{
                   alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Go-To Vanilla & Chocolate Cupcakes</h5>
+                    Go-To Vanilla & Chocolate Cupcakes ₹~99</h5>
                   <p class="card-text">
                     Go-To Vanilla & Chocolate Cupcakes
                     Moist, perfect cupcakes everyone will love. Recipes with photos and reviews for vanilla cupcakes,
@@ -454,7 +512,7 @@ span{
                   src="https://assets.epicurious.com/photos/575991f3973781fc02c2a827/6:4/w_1600%2Cc_limit/EP_06062016_Vanilla-Buttermilk-Wedding-Cake-with-Raspberries-and-Orange-Cream-Cheese-Frosting.jpg"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Butter Cake </h5>
+                  <h5 class="card-title"> Butter Cake  ₹~199 </h5>
                   <p class="card-text">Any recipe for cake that begins "cream butter and sugar" is a butter cake. After
                     the creaming, you add eggs to aerate the batter a bit, flour (and sometimes another liquid, like
                     milk) to give it structure and texture, and baking powder or baking soda to ensure that it rises in
@@ -479,7 +537,7 @@ span{
                   src="https://assets.epicurious.com/photos/5af4550baf6ece1dfcaf1a83/6:4/w_1600%2Cc_limit/persian-love-cake-051018.jpg"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Chiffon Cake</h5>
+                  <h5 class="card-title"> Chiffon Cake ₹~150</h5>
                   <p class="card-text">
                     This fairly recent American creation was invented by a salesman who sold the recipe to General
                     Mills, which spread the recipe through marketing materials in the 1940s and 1950s. A classic chiffon
@@ -494,7 +552,7 @@ span{
                   alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Chowmein</h5>
+                    Chowmein ₹~40</h5>
                   <p class="card-text">
                     Chow mein are Chinese stir-fried noodles with vegetables and sometimes meat or tofu; the name is a
                     romanization of the Taishanese chāu-mèn. The dish is popular throughout the Chinese diaspora and
@@ -508,7 +566,7 @@ span{
                   src=" https://thebetterindia-english.s3.ap-south-1.amazonaws.com/uploads/2017/03/sindhi-pani-puri-house-mumbai-representational_1465557513.jpg"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Paani Puri </h5>
+                  <h5 class="card-title"> Paani Puri ₹~20</h5>
                   <p class="card-text">Phuchka (help·info)) is a type of snack that originated in the Indian
                     subcontinent. It consists of a round or ball-shaped, hollow puri (a deep-fried crisp crepe), filled
                     with a mixture of flavored water (known as imli pani), tamarind chutney, chili, chaat masala,
@@ -532,7 +590,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr09/enhanced-11958-1411487693-6.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Masala Chai </h5>
+                  <h5 class="card-title">Masala Chai ₹~15 </h5>
                   <p class="card-text"> Of course you've heard of chai, but do you actually know how it's made?
                     Traditional masala chai, or what most Americans know simply as chai, is black tea and milk combined
                     with a blend of cinnamon, cardamom, ginger, cloves, black pepper, fennel, and star anise. A perfect
@@ -547,7 +605,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Mango Lassi </h5>
+                    Mango Lassi  ₹~49 </h5>
                   <p class="card-text">
                     Mango lassi is another way to cool down if you had a heavy hand with the chili peppers. It's
                     basically a mango milkshake or smoothie made with milk, yogurt, fresh mango puree, and a few
@@ -560,7 +618,7 @@ span{
                   src="https://img.huffingtonpost.com/asset/561e62ff1400002200c79e48.jpeg?ops=scalefit_960_noupscale&format=webp"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Mint Oreo Cake </h5>
+                  <h5 class="card-title">Mint Oreo Cake ₹~99 </h5>
                   <p class="card-text">Hands up who loves Oreos! This Mint Oreo cake is to die for - a dark and decadent
                     chocolate cake with layers of mint and crushed Oreo ... </p>
                   <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
@@ -581,7 +639,7 @@ span{
                   src=" https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr08/enhanced-2917-1411491845-8.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Kulfi </h5>
+                  <h5 class="card-title">Kulfi ₹~10 </h5>
                   <p class="card-text"> If your main dish was too spicy, have kulfi to cool things down. This frozen
                     dessert is made with milk that's been cooked down, sweetened, flavored, and frozen in moulds. It's
                     like an ice cream popsicle and comes in traditional flavors like rose, pistachio, and mango. Yes
@@ -596,7 +654,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Rice Kheer</h5>
+                    Rice Kheer  ₹~115</h5>
                   <p class="card-text"> Rice kheer is an Indian version of rice pudding, but because Indian food is
                     awesome, it does rice pudding one better. Rice kheer is flavored with saffron and cardamom, topped
                     with pistachios and almonds, and deserves a spot in the dessert hall of fame.
@@ -609,7 +667,7 @@ span{
                   src="https://img.huffingtonpost.com/asset/561e62fb1400002b003c832e.jpeg?ops=scalefit_960_noupscale&format=webp"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Meyer Lemon Bars </h5>
+                  <h5 class="card-title">Meyer Lemon Bars ₹~69 </h5>
                   <p class="card-text"></p>
                   <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                 </div>
@@ -629,7 +687,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr05/longform-original-22027-1411492591-8.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Roti </h5>
+                  <h5 class="card-title">Roti ₹~110 </h5>
                   <p class="card-text"> Roti is another type of flatbread, but because the dough doesn't contain any
                     yeast, it's actually much thinner than naan. They're kind of like tortillas, and at some
                     restaurants, they're even used to make curry wrap sandwiches.
@@ -645,7 +703,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Naan </h5>
+                    Naan  ₹~50 </h5>
                   <p class="card-text"> Naan is the bread you'll use to soak up all of the sauce left on your plate.
                     It's usually pillowy soft, warm, and brushed with oil and herbs. You can customize your naan with a
                     few different additions, and garlic is always a good way to go.
@@ -658,7 +716,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr09/enhanced-22545-1411492343-1.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Biryani</h5>
+                  <h5 class="card-title">Biryani  ₹~139</h5>
                   <p class="card-text">If jalfrezi is like Indian stir fry, then biryani is like Indian fried rice. Rice
                     is the primary ingredient to which any combination of meats, vegetables, dried fruits, nuts, and
                     spices are added. Some biryanis contain raisins, which add a level of sweetness to the otherwise
@@ -681,7 +739,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr08/longform-original-4996-1411490556-10.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Chicken Jalfrezi </h5>
+                  <h5 class="card-title">Chicken Jalfrezi ₹~199 </h5>
                   <p class="card-text"> Chicken jalfrezi is characterized by its large pieces of onions and red and
                     green peppers, which make this dish similar to a stir fry. The meat and vegetables are cooked in oil
                     and spices, then tomatoes are added to create a thick, chunky sauce. Go crazy, jalfrezi.
@@ -695,7 +753,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Chicken Korma </h5>
+                    Chicken Korma ₹~149 </h5>
                   <p class="card-text">
                     If spicy food isn't your game, korma might be a safer bet. This curry dish is often made with
                     coconut milk and ground up almonds or cashews, which give the sauce a pleasant nutty flavor and
@@ -708,7 +766,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr10/enhanced-21909-1411487035-20.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Aloo Tikki</h5>
+                  <h5 class="card-title"> Aloo Tikki ₹~99</h5>
                   <p class="card-text">Think of aloo tikki as delicious Indian potato fritters. These appetizers or
                     snacks are made with mashed potatoes and a variety of spices, formed into patties, then fried in
                     oil. </p>
@@ -730,7 +788,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr01/longform-original-5715-1411488852-29.jpg?downsize=600:*&output-format=auto&output-quality=auto "
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Mango Chutney </h5>
+                  <h5 class="card-title">Mango Chutney ₹~80 </h5>
                   <p class="card-text">
                     This quintessential Indian condiment is used to top many Indian appetizers and is made with mangoes,
                     vinegar, sugar, and spices. Mango chutney is probably the most recognizable chutney, and the most
@@ -745,7 +803,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Samosas</h5>
+                    Samosas ₹~30</h5>
                   <p class="card-text">
                     Think of samosas as being an Indian version of empanadas. These are a favorite appetizer made with
                     with a flaky pastry enveloping a hearty filling of potatoes and vegetables. They're folded into
@@ -758,7 +816,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr09/longform-original-11349-1411487122-3.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Raita</h5>
+                  <h5 class="card-title"> Raita ₹~49</h5>
                   <p class="card-text">Raita is your best friend if you're having Indian food for the first time. Not
                     exactly sure how spicy your dish is going to be? Think you might not be able to handle it? Have no
                     fear. Raita's got your back. This cooling cucumber-mint yogurt sauce will dial down the heat if
@@ -781,7 +839,7 @@ span{
                   src=" https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr05/longform-original-22620-1411492130-3.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Pakora/Bhaji</h5>
+                  <h5 class="card-title"> Pakora/Bhaji  ₹~69</h5>
                   <p class="card-text"> Pakora and bhaji are two terms for vegetables that are battered and deep fried,
                     kind of like tempura. Onion is one of the most popular varieties of pakora and bhaji, but other
                     vegetables are prepared the same way. That's a pretty convincing way to get your 3-5 a day.
@@ -795,7 +853,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Palak Paneer/Saag Paneer</h5>
+                    Palak Paneer/Saag Paneer ₹~120</h5>
                   <p class="card-text">
                     Palak paneer is what Popeye would eat if he ate Indian food. It's cooked spinach with a soft, fresh
                     white cheese called paneer, and it's amazing. You might also know this dish as saag paneer. "Palak"
@@ -809,7 +867,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr11/longform-original-5455-1411487211-4.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Chana Dal</h5>
+                  <h5 class="card-title"> Chana Dal ₹~100</h5>
                   <p class="card-text">Chana dal is a dish consisting primarily of split chickpeas stewed with spices
                     such as turmeric. Dal also refers to other legumes such as peas, kidney beans, and lentils, and it's
                     possible you might also find these varieties on your restaurant menu.</p>
@@ -831,7 +889,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr01/longform-original-5128-1411489501-20.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Aloo Gobi</h5>
+                  <h5 class="card-title">Aloo Gobi ₹~119</h5>
                   <p class="card-text">
                     Aloo gobi is a flavorful dish made with potatoes and cauliflower that are cooked in garlic, ginger,
                     turmeric, and other spices. It's typically on the spicier side and is drier because, unlike many
@@ -845,7 +903,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Tandoori Chicken</h5>
+                    Tandoori Chicken  ₹~299</h5>
                   <p class="card-text">
                     Traditionally, tandoori chicken is roasted in a clay oven called a tandoor. The chicken is marinated
                     in yogurt and spices overnight before it goes in the tandoor on long skewers. If your kitchen or
@@ -858,7 +916,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr02/enhanced-11477-1411487412-6.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Chicken Tikka Masala</h5>
+                  <h5 class="card-title">Chicken Tikka Masala ₹~199</h5>
                   <p class="card-text">Chicken tikka masala is a classic Indian takeout dish and a prominent feature of
                     Indian as well as British cuisine. It's so popular that it's even been called, unofficially, the
                     "national dish of the U.K." Pieces of tandoori chicken are cut up and stewed in a rich.</p>
@@ -880,7 +938,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr07/enhanced-16372-1411493621-4.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Butter Chicken</h5>
+                  <h5 class="card-title">Butter Chicken ₹~250</h5>
                   <p class="card-text">
                     Butter chicken is very similar to chicken tikka masala, but whole, bone-in pieces of chicken may be
                     used. In most cases, however, chicken tikka masala and butter chicken are nearly interchangeable.
@@ -894,7 +952,7 @@ span{
                   class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    Lamb Rogan Josh</h5>
+                    Lamb Rogan Josh ₹~99</h5>
                   <p class="card-text">
                     Lamb rogan josh originally comes from Pakistan and the Kashmir region of Northern India and is
                     available today at most Indian takeout restaurants around the world. After the meat marinates in
@@ -908,7 +966,7 @@ span{
                   src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr02/longform-original-10652-1411487381-25.jpg?downsize=800:*&output-format=auto&output-quality=auto"
                   class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"> Chicken Vindaloo</h5>
+                  <h5 class="card-title"> Chicken Vindaloo ₹~99</h5>
                   <p class="card-text">Vindaloos are characterized by a thinner, typically tangier sauce made with a
                     splash of vinegar. These dishes also typically tend to be on the spicier side with a blend of hot
                     chilies in the mix, so proceed with caution.</p>
@@ -931,7 +989,7 @@ span{
  <div class="buzz">
 
  
-  <h1 class="text-center display-3    ">Busnesss Location</h1>
+  <h1 class="text-center display-3" id="scrolllocation">Busnesss <span> Location </span>  </h1>
   <hr>
   <div class="google-maps">
     <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d56939.00355900873!2d75.83566555195682!3d26.88166088394409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!2s26.88160708568961%2C%2075.87087830395065!3m2!1d26.8816071!2d75.8708783!5e0!3m2!1sen!2sin!4v1595134745266!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -951,7 +1009,7 @@ span{
    <section class="mobile">
     <form>
       <div class="form-row">
-        <h1 class="mx-auto ">Contact Us</h1>
+        <h1 class="mx-auto " id="scrollcontact">Contact <span>Us </span> </h1>
         
         <hr>
         <div class="form-group col-md-12">
@@ -1002,11 +1060,14 @@ span{
   </section>
       <!-- CONTACT US END -->
   
+    <!-- footer start  -->
+    <footer>
+      
+      
+      <div class="text-center">© copyright 2020 _ASUS-Rahul-Frontend_bakery-and-restaurants_GSBSP-BR38-</div>
+    </footer>
     
-  <footer>
-    <div class="text-center">© copyright 2020 _ASUS-Rahul-Frontend_bakery-and-restaurants_GSBSP-BR38-</div>
-  </footer>
-
+    <!-- footer end -->
 
 
 
