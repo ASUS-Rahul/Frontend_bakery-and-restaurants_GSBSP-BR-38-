@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&family=Playfair+Display:wght@500&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <style>
     *{
@@ -38,10 +42,18 @@
      width: 1260pc;
      height:600px;
      border: 6px solid black ;
-     background-color: thistle;
+     background-color: none;
+     background-image: url("https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+ 
+     background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+      
      display: flex;
      flex-direction: row;
      overflow:  auto;
+     /* opacity: 1; */
+     color: white;
      
      
      
@@ -52,9 +64,9 @@
      width: 500px;
      height: 500px ;
      margin:40px 3px ;
-    
      font-size: 1.1rem ;
- }
+    }
+    
  
 
  .aboutfirst h1{
@@ -118,27 +130,34 @@ span{
 /* navbar home .....etc  */
 .navbar-nav{
     font-family: 'Baloo Bhaina 2', cursive;
-    font-size: 22px;
+    font-size: 20px;
     margin: -10px  auto;
     
-}
-
-
-
-.navbar-nav .nav-item .nav-link{
+  }
+  
+  
+  
+  .navbar-nav .nav-item .nav-link{
     color:black;
     margin: 0px 5px; 
-}
-.navbar-nav .nav-item .nav-link:hover{
-
+    font-family: 'Lobster', cursive;
+ 
+ 
+  }
+  .navbar-nav .nav-item .nav-link:hover{
     color: red;
-    background-color: rgb(198, 187, 187);
-    border-radius: 15px;
-}
+    background-color: white;
+
+  }
+  
+
+ 
+ 
+     
 
 .navbar-nav .nav-item .nav-link:active{
     
-    color: yellow;
+    color: black;
 }
 
 /* navbar end */
@@ -149,11 +168,12 @@ span{
 /* about text  */
 
 .text-center .display-3:hover {
-    border: 5px solid red;
-    background-color:whitesmoke;
-    border-radius: 15px;
-    display: block;
-    padding: 3px;
+    border: none;
+    background-color:white;
+    color: red;
+    border-radius: 0px;
+    padding: 0px;
+   
 
 }
 
@@ -164,21 +184,31 @@ span{
 /* menu start  */
 
 .container .text-center:hover{
-    border: 2px solid red;
-    background-color: whitesmoke;
-    border-radius: 15px;
+    border: none;
+    color: red;
+    background-color: white;
+    border-radius: 0px;
 }
 .container .text-center:active{
-    border: 2px solid red;
+    border: none;
     color: red;
-    background-color: whitesmoke;
-    border-radius: 18px;
+    background-color: white;
+    border-radius: 0px;
 }
 
 /* imagesss */
 .card img{
-    width: 22.5pc;
+    width: auto;
     height: 22.5pc;
+    box-shadow: -1px 4px 20px rgba(0,0,0, 0.4);
+  transform: rotate(360);
+}
+.card img:hover{
+     
+    box-shadow: -1px 4px 20px rgba(8, 6, 6, 0.80);
+    transform: scale(1.01)  ;
+  
+  
 }
 
  .card h5{
@@ -187,43 +217,43 @@ span{
 }
 
   .buzz h1:hover{
-    background-color: whitesmoke;
-    border: 4px solid red;
-    border-radius: 20px;
+    border-radius: 0px;
+    background-color: white;
+    border:none;
+    color: red;
     
 }
 .buzz h1:active{
-    border-radius: 20px;
-    background-color: whitesmoke;
-    border: 4px solid red;
+    border-radius: 0px;
+    background-color: white;
+    border:none;
+    color: red;
 
 
 }
 
 .mx-auto:hover{
-    background-color: whitesmoke;
-    border: 4px solid red;
-    border-radius: 18px;
-    /* display: block; */
-    /* width: 100vh; */
+    background-color: white;
+    border:none;
+    border-radius: 0px;
+ color: red;
     
 }
 .mx-auto:active{
-    background-color: whitesmoke;
-    color: red;
-    border: 4px solid red;
-    border-radius: 18px;
-    /* display: block; */
-    /* width: 1260px; */
+  background-color: white;
+    border:none;
+    border-radius: 0px;
+ color: red;
     
 }
 
 .mobile{
-    background-color: whitesmoke;
-    border: 4px solid black;
+    background-color: white;
+    border: none;
     margin: 14px;
     padding: 122px;
 }
+ 
 
  .card-body .card-title:hover{
     color: red
@@ -629,54 +659,7 @@ h5:hover{
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-12">
-      <div class="container">
-        <div class="row">
-          <div class="cards">
-            <div class="card-deck">
-              <div class="card">
-                <img
-                  src=" https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/13/enhanced/webdr08/enhanced-2917-1411491845-8.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Kulfi ₹~10 </h5>
-                  <p class="card-text"> If your main dish was too spicy, have kulfi to cool things down. This frozen
-                    dessert is made with milk that's been cooked down, sweetened, flavored, and frozen in moulds. It's
-                    like an ice cream popsicle and comes in traditional flavors like rose, pistachio, and mango. Yes
-                    please.
-                  </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr07/longform-original-12734-1411487633-9.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Rice Kheer  ₹~115</h5>
-                  <p class="card-text"> Rice kheer is an Indian version of rice pudding, but because Indian food is
-                    awesome, it does rice pudding one better. Rice kheer is flavored with saffron and cardamom, topped
-                    with pistachios and almonds, and deserves a spot in the dessert hall of fame.
-                  </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.huffingtonpost.com/asset/561e62fb1400002b003c832e.jpeg?ops=scalefit_960_noupscale&format=webp"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Meyer Lemon Bars ₹~69 </h5>
-                  <p class="card-text"></p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="col-lg-12 col-md-12 col-12">
       <div class="container">
         <div class="row">
@@ -729,106 +712,8 @@ h5:hover{
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-12">
-      <div class="container">
-        <div class="row">
-          <div class="cards">
-            <div class="card-deck">
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr08/longform-original-4996-1411490556-10.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Chicken Jalfrezi ₹~199 </h5>
-                  <p class="card-text"> Chicken jalfrezi is characterized by its large pieces of onions and red and
-                    green peppers, which make this dish similar to a stir fry. The meat and vegetables are cooked in oil
-                    and spices, then tomatoes are added to create a thick, chunky sauce. Go crazy, jalfrezi.
-                  </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr05/longform-original-10422-1411490000-35.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Chicken Korma ₹~149 </h5>
-                  <p class="card-text">
-                    If spicy food isn't your game, korma might be a safer bet. This curry dish is often made with
-                    coconut milk and ground up almonds or cashews, which give the sauce a pleasant nutty flavor and
-                    smoothness. The mildness of the sauce lets the aroma of milder spices shine. </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr10/enhanced-21909-1411487035-20.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> Aloo Tikki ₹~99</h5>
-                  <p class="card-text">Think of aloo tikki as delicious Indian potato fritters. These appetizers or
-                    snacks are made with mashed potatoes and a variety of spices, formed into patties, then fried in
-                    oil. </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-12">
-      <div class="container">
-        <div class="row">
-          <div class="cards">
-            <div class="card-deck">
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr01/longform-original-5715-1411488852-29.jpg?downsize=600:*&output-format=auto&output-quality=auto "
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Mango Chutney ₹~80 </h5>
-                  <p class="card-text">
-                    This quintessential Indian condiment is used to top many Indian appetizers and is made with mangoes,
-                    vinegar, sugar, and spices. Mango chutney is probably the most recognizable chutney, and the most
-                    widely available, but chutneys can be made from a number of other ingredients including mint and
-                    tamarind. </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr02/longform-original-11540-1411487102-19.jpg?downsize=600:*&output-format=auto&output-quality=auto "
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Samosas ₹~30</h5>
-                  <p class="card-text">
-                    Think of samosas as being an Indian version of empanadas. These are a favorite appetizer made with
-                    with a flaky pastry enveloping a hearty filling of potatoes and vegetables. They're folded into
-                    triangles, fried, and served with chutneys. </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr09/longform-original-11349-1411487122-3.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> Raita ₹~49</h5>
-                  <p class="card-text">Raita is your best friend if you're having Indian food for the first time. Not
-                    exactly sure how spicy your dish is going to be? Think you might not be able to handle it? Have no
-                    fear. Raita's got your back. This cooling cucumber-mint yogurt sauce will dial down the heat if
-                    things get too hot. </p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+     
+     
     <div class="col-lg-12 col-md-12 col-12">
       <div class="container">
         <div class="row">
@@ -879,55 +764,7 @@ h5:hover{
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-12">
-      <div class="container">
-        <div class="row">
-          <div class="cards">
-            <div class="card-deck">
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr01/longform-original-5128-1411489501-20.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Aloo Gobi ₹~119</h5>
-                  <p class="card-text">
-                    Aloo gobi is a flavorful dish made with potatoes and cauliflower that are cooked in garlic, ginger,
-                    turmeric, and other spices. It's typically on the spicier side and is drier because, unlike many
-                    main dishes, it isn't served as a stew or in a sauce.</p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/12/enhanced/webdr09/longform-original-11349-1411490150-45.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Tandoori Chicken  ₹~299</h5>
-                  <p class="card-text">
-                    Traditionally, tandoori chicken is roasted in a clay oven called a tandoor. The chicken is marinated
-                    in yogurt and spices overnight before it goes in the tandoor on long skewers. If your kitchen or
-                    takeout spot doesn't have a clay oven, a grill or broiler will do the trick.</p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://img.buzzfeed.com/buzzfeed-static/static/2014-09/23/11/enhanced/webdr02/enhanced-11477-1411487412-6.jpg?downsize=800:*&output-format=auto&output-quality=auto"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Chicken Tikka Masala ₹~199</h5>
-                  <p class="card-text">Chicken tikka masala is a classic Indian takeout dish and a prominent feature of
-                    Indian as well as British cuisine. It's so popular that it's even been called, unofficially, the
-                    "national dish of the U.K." Pieces of tandoori chicken are cut up and stewed in a rich.</p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="col-lg-12 col-md-12 col-12">
       <div class="container">
         <div class="row">
@@ -1013,35 +850,32 @@ h5:hover{
         
         <hr>
         <div class="form-group col-md-12">
-          <label for="inputEmail4">Name </label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <label for="inputEmail4" >Name </label>
+          <input type="email" class="form-control" id="inputEmail4"  placeholder="Entre Full-name" required>
         </div>
         <div class="form-group col-md-12">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="email" class="form-control" id="inputEmail4"  placeholder="Entre E-mail" required>
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <input type="password" class="form-control" id="inputPassword4"  placeholder="Entre Password" required>
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
       </div>
-      <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
+       
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
+          <input type="text" class="form-control" id="inputCity"  placeholder=" Type - City" required>
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
+            <option selected>Select</option>
             <option>...</option>
           </select>
         </div>
@@ -1055,7 +889,7 @@ h5:hover{
           </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-danger">Sign in</button>
     </form>
   </section>
       <!-- CONTACT US END -->
